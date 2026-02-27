@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Music</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styleMain.css">
+            
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <iframe class="spotifyElement" data-testid="embed-iframe" style=" position: fixed; top: 0; right: 0; margin-right: 50px; margin-top: 60px; z-index: 10; border-radius:12px" src="https://open.spotify.com/embed/track/5OYumxiBEEEL5Hq2fGhpsS?utm_source=generator" width="30%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        <div class="navbar" id="myNavbar">
+            <a href="index.html">Home</a>
+            <a href="music.html">Music</a>
+            <a href="appDev.html">AppDev</a>
+            
+            <a href="https://www.instagram.com/danny_salvey/" target="_blank" rel="noopener noreferrer" style="float:right;">
+                <img src="images/IGlogo.png" alt="Instagram logo" style="height:20px; width:20px;">
+            </a>
+
+            <a href="https://www.linkedin.com/in/danielsalvey" target="_blank" rel="noopener noreferrer" style="float:right;">
+                <img src="images/INlogo.png" alt="LinkedIn logo" style="height:20px; width:20px;">
+            </a>
+
+            <a href="https://open.spotify.com/user/pouchpouchiscool?si=f67a3d254fa3457e" target="_blank" rel="noopener noreferrer" style="float:right;">
+                <img src="images/SPOTIFYlogo.png" alt="Spotify logo" style="height:20px; width:20px;">
+            </a>
+
+            <!-- Icon link to toggle menu when screen becomes smaller-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                &#9776;
+            </a>
+
+        </div>
+
+        <div class="fade-in-element">
+        <div class="header" style="background-image: url('images/dannyMusic.jpg');">
+            <h1 style="text-indent: 10px;">Music</h1>
+            <p></p>
+        </div>
+        
+        <div class="row">
+            <div class="main">
+                <h2>Ensembles</h2>
+
+                <button type="button" onclick="buttonToggle('psu')" class="button">Penn State</button>
+                <div id="psu" class="buttonContent">
+                    <p>The Pennsylvania State University Marching Blue Band:</p>
+                    <img src="images/PSU.jpg" alt="Danny @ Blue Band" style="width:80%;">
+                    <p>I started marching for the Blue Band in 2022, after a virtual music
+                    audition and an in-person marching audition. The audition process
+                    was definitely nerve-racking, as all prospective members had to
+                    wait to hear their name called in front of the entire band. In 2025-2026,
+                    I was the Center Snare, leading the entire band by starting
+                    each song by "tapping off", keeping tempo, and providing valuable
+                    feedback for other drumline members to continue to improve their skills.
+                    </p>
+                </div>
+                <hr>
+
+                <button type="button" onclick="buttonToggle('gmu')" class="button">GMU</button>
+                <div id="gmu" class="buttonContent">
+                    <p>The George Mason University Indoor Drumline:</p>
+                    <img src="images/GMU2.jpg" alt="Danny @ GMU" style="width:80%;">
+                    <p>I am currently in my second year with the ensemble, starting with
+                        my audition in the fall of 2024. GMU is a highly competitive ensemble,
+                        competing in Winter Guard International (WGI) in the Percussion
+                        Independent World Class (PIW) division. Last year we placed 6th at finals,
+                        with a score of 94.863 as well as achieving the fan favorite show for the year!
+                        This year we are working with the momentum we built last year to continually
+                        improve and provide fans with the best product possible.
+                    </p>
+                    <a href="https://youtu.be/1Ga-i7kxQts?si=sIOhC6QCI-LGzuxe" target="_blank" rel="noopener noreferrer">Link to GMU 2025 Finals Performance!</a>
+                </div>
+                <hr>
+
+                <button type="button" onclick="buttonToggle('bucs')" class="button">Bucs</button>
+                <div id="bucs" class="buttonContent">
+                    <p>The Reading Buccaneers:</p>
+                    <img src="images/BUCS.jpg" alt="Danny @ Bucs" style="width:80%;">
+                    <p>I started my independent outdoor marching career with The Reading Buccaneers!
+                    I got the opportunity to march with some of the best percussionists of the past
+                    few years, and would not trade these experiences for anything. I am super grateful
+                    to everyone who helped me get to where I am as a drummer today!
+                    </p>
+                    <a href="https://youtu.be/SYL564mpM10?si=1V261UgO8G7bBt5s" target="_blank" rel="noopener noreferrer">Link to BUCS 2024 Finals Lot!</a><br>
+                    <a href="https://youtu.be/hUeni2PKzgY?si=CtuH46lVqYy1H7QZ" target="_blank" rel="noopener noreferrer" style="padding-top: 20px;">Link to BUCS 2025 Finals Lot!</a>
+                </div>
+                <hr>
+                
+                <h2>Compositions</h2>
+                <details>
+                    <summary>Time</summary>
+                    <p><a href="https://drive.google.com/drive/folders/1EdSQk2mcG5KDhzRknldXiHezqTTibBIw?usp=drive_link" target="_blank" rel="noopener noreferrer" style="padding-bottom: 100px;">Link</a></p>
+                </details>
+                
+                <h2>Lessons</h2>
+                <button type="button" onclick="buttonToggle('lessons')" class="button">Click for details</button>
+                <div id="lessons" class="buttonContent">
+                    <p>I offer music lessons in the Greater Philadelphia Area, as well as virtual lessons through Zoom.
+                        I specialize in marching snare drum and percussion fundamentals.
+                        My goal is to encapsulate all necessary information to improve as a musician
+                        within 60-90 minute lessons, focusing on technique, approach, and fundamentals.
+                        I offer flexible, competitive pricing.
+                    </p>
+                    <hr>
+                    <p>For more information, please contact me through either email or text.
+                        Please include your full name and tell me that you are interested in lessons!
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <button type="button" onclick="buttonToggle('contact')" class="button">Contact Me</button>
+            <div id="contact" class="buttonContent">
+                <hr>
+                <p style="font-style:italic;">Serious inquiries only</p>
+                <hr>
+                <p>Email: <a href="mailto:dansalvey@icloud.com" style="font-size:16px; color:orange; text-decoration:underline;">dansalvey@icloud.com</a></p>
+                <p>Phone: <a href="sms:+16105858549" style="font-size:16px; color:orange; text-decoration:underline;">(610)-585-8549</a></p>
+            </div>
+
+            <h2></h2>
+        </div>
+        </div>
+
+        <script src="danny.js"></script>
+    </body>
+    
+</html>

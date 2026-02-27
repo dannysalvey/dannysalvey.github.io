@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Application Development</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styleMain.css">
+            
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <div class="navbar" id="myNavbar">
+            <a href="index.html">Home</a>
+            <a href="music.html">Music</a>
+            <a href="appDev.html">AppDev</a>
+            
+            <a href="https://www.instagram.com/danny_salvey/" target="_blank" rel="noopener noreferrer" style="float:right;">
+                <img src="images/IGlogo.png" alt="Instagram logo" style="height:20px; width:20px;">
+            </a>
+
+            <a href="https://www.linkedin.com/in/danielsalvey" target="_blank" rel="noopener noreferrer" style="float:right;">
+                <img src="images/INlogo.png" alt="LinkedIn logo" style="height:20px; width:20px;">
+            </a>
+
+            <a href="https://open.spotify.com/user/pouchpouchiscool?si=f67a3d254fa3457e" target="_blank" rel="noopener noreferrer" style="float:right;">
+                <img src="images/SPOTIFYlogo.png" alt="Spotify logo" style="height:20px; width:20px;">
+            </a>
+
+            <!-- Icon link to toggle menu when screen becomes smaller-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                &#9776;
+            </a>
+
+        </div>
+
+        <div class="fade-in-element">
+        <div class="header" style="background-image: url('images/dannyAppdev.jpg');">
+            <h1 style="text-indent: 10px;">Cybersecurity</h1>
+            <p style="text-indent: 15px; text-shadow: 2px 2px 4px #000000;">Application Development Focus</p>
+        </div>
+
+        <div class="row">
+            <div class="main">
+                <button type="button" onclick="buttonToggle('resume')" class="button">Resume</button>
+                <embed id="resume" src="images/Resume 2_18_2026.pdf#toolbar=0" style="width: 100%;  min-height: 500px;" class="buttonContent" />
+                
+                <hr>
+                <button type="button" onclick="buttonToggle('skills')" class="button">Skills</button>
+                <ul id="skills" class="buttonContent">
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>C++</li>
+                    <li>Cyber Forensic Tools</li>
+                    <li>Object-Oriented Programming</li>
+                </ul>
+                <hr>
+                <p>I am currently in my fourth year studying at Penn State University.
+                    My main focus area is application development, where I have learned programming languages such as Java, Python, JavaScript, HTML, CSS, and C++.
+                    This website was built from scratch using a combination of JavaScript, HTML, and CSS.
+                    In future implementations, the React framework will be used to better develop the User interface.
+                </p>
+                <hr>
+                <p>In his coursework, I have learned many fundamental Cybersecurity skills necessary for real world applications.
+                    Currently, I am learning about Cyber Forensics, using FTK Imager and Autopsy.
+                    Additionally, I am studying Malware Analytics, Network Security, and Distributed Object Computing.
+                </p>
+                <hr>
+                <p>I am planned to graduate from Penn State in August of 2026, following the completion of a Summer 2026 internship.
+                    I am actively looking for roles within the fields of Software Engineering/Development, Cyber Consulting, and Cyber Analyst.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button type="button" onclick="buttonToggle('contact')" class="button">Contact Me</button>
+            <div id="contact" class="buttonContent">
+                <hr>
+                <p style="font-style:italic;">Serious inquiries only</p>
+                <hr>
+                <p>Email: <a href="mailto:dansalvey@icloud.com" style="font-size:16px; color:orange; text-decoration:underline;">dansalvey@icloud.com</a></p>
+                <p>Phone: <a href="sms:+16105858549" style="font-size:16px; color:orange; text-decoration:underline;">(610)-585-8549</a></p>
+            </div>
+
+            <h2></h2>
+        </div>
+        </div>
+
+        <script src="danny.js"></script>
+    </body>
+    
+</html>
