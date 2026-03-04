@@ -97,9 +97,12 @@ input:checked + .slider:before {
 
 /* default style for a larger screen size */
 .navbar {
+    position: fixed;
+    width: 98%;
     overflow: hidden;
     background-color: white;
     padding: 10px;
+    z-index: 9;
     
 }
 
